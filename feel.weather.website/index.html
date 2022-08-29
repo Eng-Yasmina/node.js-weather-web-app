@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feel.weather</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="grid">
+        <p class="logo">feel.weather</p>
+        <p id="intro" class="intro"><span>No matter</span> what the weather, always bring your own sunshine ...</p>
+        <div id="app-input-data" class="app-input-data">
+            <div class="form">
+                <input type="text" id="zip" placeholder="enter zip code here">
+                <label class="label-location">
+                    <span class="content-location">What's your city ?</span>
+                </label>
+                <p id="Error" class="error-msg">invalid zip code!</p>
+            </div>
+
+            <div class="text-feeling">
+                <textarea id="feeling" cols="20" rows="1" placeholder="write here"></textarea>
+                <label class="label-feeling">
+                    <span class="content-feeling">What are your feeling today ?</span>
+                </label>
+            </div>
+
+            <button id="generate" type="submit">Generate <i class="fa-solid fa-arrow-right arrow"></i></button>
+            
+            <div class="viewed">
+                <label class="label-viewed">
+                    <span class="content-viewed">People also viewed</span>
+                </label>
+            </div>
+
+            <div class="common-countries">
+                <button id="New-York">New York</button>
+                <button id="Los-Angeles">Los Angeles</button>
+                <button id="Mountain-View">Mountain View</button>
+            </div>
+            
+        </div>
+
+        <div id="entryHolder" class="entry-holder">
+            <div>
+                <div id="city" class="city"></div>
+                <div id="date" class="date"></div>
+                <div id="sample"></div>
+                <div id="description" class="description"></div>
+                <div id="content" class="content"></div>
+            </div>
+            <div>
+                <div id="temp" class="temp"></div>
+                <div id="digital-clock" class="digital-clock"></div>
+            </div>
+        </div>
+        <button id="goBack" class="go-back">Go back <i class="fa-solid fa-arrow-right arrow"></i></button>
+    </div>
+
+    
+</body>
+</html>
