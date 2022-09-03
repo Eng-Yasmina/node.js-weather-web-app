@@ -11,41 +11,44 @@
     <script src="./app.js" defer></script>
 </head>
 <body>
+    <!-- HTML documet follows BEM naming conventions IDs are only used for sections to connect menu anchors to sections -->
     <div class="grid">
         <p class="logo">feel.weather</p>
         <p id="intro" class="intro"><span>No matter</span> what the weather, always bring your own sunshine ...</p>
         <div id="app-input-data" class="app-input-data">
+            <!-- TODO: build the form so that the user can input zip code -->
             <div class="form">
-                <input type="text" id="zip" placeholder="enter zip code here">
-                <label class="label-location">
-                    <span class="content-location">What's your city ?</span>
+                <input type="text" id="zip" class="zip__location" placeholder="enter zip code here">
+                <label class="label__location">
+                    <span class="content__location">What's your city ?</span>
                 </label>
                 <p id="Error" class="error-msg">invalid zip code!</p>
             </div>
-
-            <div class="text-feeling">
-                <textarea id="feeling" cols="20" rows="1" placeholder="write here"></textarea>
-                <label class="label-feeling">
-                    <span class="content-feeling">What are your feeling today ?</span>
+            <!-- TODO: build an text area to allow the user to express his feelings-->
+            <div class="text__feeling">
+                <textarea id="feeling" class="enter__feeling" cols="20" rows="1" placeholder="write here"></textarea>
+                <label class="label__feeling">
+                    <span class="content__feeling">What are your feeling today ?</span>
                 </label>
             </div>
 
+            <!-- TODO: create generate button to generate the data from the server's endpoint object -->
             <button id="generate" type="submit">Generate <i class="fa-solid fa-arrow-right arrow"></i></button>
-            
+
+            <!-- TODO: add feature for the user to choose from famous cities -->
             <div class="viewed">
-                <label class="label-viewed">
-                    <span class="content-viewed">People also viewed</span>
+                <label class="label__viewed">
+                    <span class="content__viewed">People also viewed</span>
                 </label>
             </div>
-
             <div class="common-countries">
                 <button id="New-York">New York</button>
                 <button id="Los-Angeles">Los Angeles</button>
                 <button id="Mountain-View">Mountain View</button>
             </div>
-            
         </div>
 
+        <!-- build output dispaly window -->
         <div id="entryHolder" class="entry-holder">
             <div>
                 <div id="city" class="city"></div>
@@ -61,7 +64,5 @@
         </div>
         <button id="goBack" class="go-back">Go back <i class="fa-solid fa-arrow-right arrow"></i></button>
     </div>
-
-    
 </body>
 </html>
