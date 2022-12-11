@@ -14,7 +14,7 @@ Using the solution of fetch and modern promises, i developed an async js web app
 # Usage
 The server will listen on port 1990:
 # Demo Preview
-![feel-weather-web-app.gif](https://media.giphy.com/media/IwE4Z0PS9julV6Ze1i/giphy.gif)
+![feel-weather-web-app.gif](https://github.com/Eng-Yasmina/node.js-weather-web-app/blob/main/images/web%20app.gif)
 # Table of contents
 - [Project Title](#nodejs-weather-web-app)
 - [Scripts](#scripts)
