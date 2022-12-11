@@ -8,9 +8,16 @@ Using the solution of fetch and modern promises, i developed an async js web app
 2. I sent (GET request) to Open Weather Map to receive the weather data by integrating it's API into my app and fetching the data using [zip code] and my [API key].
 3. I sent (POST request) to the server to store the received data in my app's backend (server.js).
 4. I sent (GET request) to the server to retrieve the stored data from the server and dynamically update the UI of my app.
+# Scripts
+- Install: npm install
+- Start server: npm run start
+# Usage
+The server will listen on port 1990:
 # Demo Preview
 ![feel-weather-web-app.gif](https://media.giphy.com/media/IwE4Z0PS9julV6Ze1i/giphy.gif)
 # Table of contents
 - [Project Title](#nodejs-weather-web-app)
+- [Scripts](#scripts)
+- [Usage](#usage)
 - [Demo Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
